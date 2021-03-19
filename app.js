@@ -20,7 +20,10 @@ app.use(express.static("public"));
 
 
 app.get("/", function(req, res){
-  res.render("home", { posts: posts, homeStartingContent: homeStartingContent });
+  res.render("home", { 
+    posts: posts, 
+    homeStartingContent: homeStartingContent
+  });
 });
 
 app.get("/about", function(req, res){
@@ -47,7 +50,7 @@ app.post("/compose", function(req, res){
   const post = {
     title: req.body.cTitle,
     content: req.body.cMessage
-  } 
+  }
   posts.push(post);
   res.redirect("/");
 })
