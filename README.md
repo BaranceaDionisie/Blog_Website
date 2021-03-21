@@ -1,4 +1,4 @@
-Blog wesite
+Blog website
 
 Note: To set up a local copy of the website use npm to install the dependencies: ejs, express, lodash, body-parser.
 
